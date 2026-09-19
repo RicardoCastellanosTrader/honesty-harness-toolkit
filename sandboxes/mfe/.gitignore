@@ -1,0 +1,4 @@
+# Datos crudos descargados de data.binance.vision (no versionar — reproducibles)
+data/
+# Resultados de corridas (regenerables)
+results/*.csv

@@ -1,0 +1,5 @@
+seleccion,n_anclajes,is_pnl_medio,is_pnl_mediana,fwd_pnl_medio,fwd_pnl_mediana,pct_fwd_positivo,robustez_media
+laxo,9,69.99,91.89,-0.67,11.51,55.6,0.8
+medio,9,74.26,84.85,-3.14,-5.65,33.3,0.83
+duro,9,85.18,99.27,-17.55,-0.62,44.4,0.7
+GANADOR/anclaje,9,86.42,99.27,-19.22,-2.86,33.3,0.78

@@ -1,0 +1,17 @@
+# honesty-harness-toolkit — dependencias CPU (por defecto, todo funciona sin GPU).
+# Python declarado: 3.12+. Verificado en 3.12.14 (numpy 2.5.3, pandas 3.0.6,
+# numba 0.67.0, resolución limpia de estos suelos) y en 3.14.3 (numpy 2.4.3,
+# pandas 3.0.1, numba 0.64.0). Resultados de la toy bit-idénticos entre ambos.
+numpy>=2.4
+pandas>=3.0
+numba>=0.64
+llvmlite>=0.46
+ccxt>=4.5
+scikit-learn>=1.8
+scipy>=1.17
+joblib>=1.5
+pyarrow>=23.0
+
+# GPU opcional (aceleración del walk-forward; NO necesaria para nada del
+# toolkit, el kernel CPU Numba es la referencia de fidelidad):
+#   pip install -r requirements-cuda.txt

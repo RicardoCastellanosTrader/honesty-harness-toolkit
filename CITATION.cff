@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this toolkit, please cite it as below, together with the study evidence and the protocol."
+type: software
+title: "honesty-harness-toolkit"
+authors:
+  - family-names: "Castellanos Macias"
+    given-names: "Ricardo"
+version: 0.1.0-rc1
+date-released: "2026-09-19"
+license: MIT
+# doi: PENDING — assigned at the Zenodo release of the toolkit.
+abstract: >-
+  Walk-forward backtesting engine plus an experimental-honesty protocol
+  (pre-registration frozen by hash before results, one cardinal a-priori
+  metric, drift-0 GBM placebo as the noise floor of best-of-N selection,
+  anti-leakage gates, asymmetric verdicts), extracted from a study that
+  returned a negative result for its own strategy family.
+references:
+  - type: data
+    title: "El trading no existe: evidencia (study evidence repository)"
+    doi: 10.5281/zenodo.21229492
+    authors:
+      - family-names: "Castellanos Macias"
+        given-names: "Ricardo"
+  - type: report
+    title: "The Honesty Harness protocol"
+    doi: 10.5281/zenodo.21838807
+    authors:
+      - family-names: "Castellanos Macias"
+        given-names: "Ricardo"

@@ -1,0 +1,44 @@
+# Datos de velas: el toolkit NO distribuye datos (descárgalos o genera sintéticos)
+data_cache/
+examples/data/*.parquet
+placebo_manifest.json
+
+# Outputs de ejecución en la raíz (las tablas RESUMEN commiteadas viven en
+# examples/toy/, fuera de estos patrones anclados)
+/toy_results_*.csv
+/toy_wf_*.csv
+
+# Entornos locales de verificación
+.venv312/
+output/
+regime_models/
+regime_wf/
+_parts_*/
+gemas_*.csv
+gemas_*_resumen.txt
+ranking_lite_v5e_*.txt
+cross_symbol_v5e.txt
+cert_fidelity_gate_W*.json
+
+# Sandboxes: datos crudos y resultados locales
+sandboxes/*/data/
+sandboxes/*/results/*
+!sandboxes/*/results/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+
+# Documentos internos de sesión (viven en ../honesty-harness-toolkit-internal/)
+SESION_*_INFORME.md
+INVENTARIO_TOOLKIT.md
+
+# Secretos (defensa en profundidad; el toolkit no usa credenciales)
+.env
+.env.*
+*.secret
+credentials*

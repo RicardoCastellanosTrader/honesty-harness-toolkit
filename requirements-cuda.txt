@@ -1,0 +1,9 @@
+# GPU OPCIONAL — aceleración CUDA del walk-forward (engine/lab_cuda.py).
+# lab_cuda._setup_cuda_paths (lab_cuda.py:29-176) prefiere estos paquetes pip
+# CUDA 12.x (lab_cuda.py:35-36). Requiere GPU NVIDIA con driver CUDA 12.x.
+# Sin GPU: NO instalar nada de este archivo — el fallback a CPU es automático
+# (regime_walk_forward.py detecta y usa el kernel Numba CPU, que es la
+# referencia de fidelidad del motor).
+-r requirements.txt
+nvidia-cuda-nvcc-cu12
+nvidia-cuda-runtime-cu12
