@@ -138,8 +138,9 @@ The order is the protection. Concretely:
    re-freeze.
 3. **Optionally timestamp the seal**: `ots stamp <preregistration>.md` —
    OpenTimestamps commits the hash to Bitcoin, so "it was written before the
-   results" becomes independently verifiable. The study sealed all 23 of its
-   pre-registrations this way; this repo's worked example ships its `.ots`.
+   results" becomes independently verifiable. The study sealed its
+   pre-registration and verdict documents this way; this repo's worked
+   example ships its `.ots`.
 4. **Run.** `placebo_verdict.py --run` verifies the seal, then computes the
    noise floor and the real result. It enforces the order: no seal, no run
    (`_require_frozen`).
@@ -158,8 +159,11 @@ figure `examples/toy/ladder.png`).
 
 - **The search-size ladder.** The best config on PURE drift-0 noise averaged
   +27% (best of 10), +83% (best of 61), +138% (best of 1000), with wide
-  spread (best-of-61 range across worlds: −490% to +379%). Nothing has any
-  edge in those worlds; the bar rises just because you looked more times.
+  spread (best-of-61 range across worlds: −490% to +379%). Accounting note:
+  toy PnL is additive over notional — a sum of per-trade percentage returns,
+  no compounding, no ruin stop — so values below −100% are possible. Nothing
+  has any edge in those worlds; the bar rises just because you looked more
+  times.
   Whatever your search size is, your result competes against THAT bar, not
   against zero — and every parameter you "just tried" grows N.
 - **The zones.** Above the floor's p97.5 → necessary, **not sufficient**
@@ -198,7 +202,10 @@ figure `examples/toy/ladder.png`).
 - No feature requests, and support is best-effort ("as is", MIT): the engine
   is published as it was used, because that is its evidentiary value.
 - Origin and calibration of every claim here: the study behind this toolkit
-  ended **negative** for its own strategy family
-  (DOI [10.5281/zenodo.21229492](https://doi.org/10.5281/zenodo.21229492));
+  ended **negative or sub-threshold for all 18 strategy families it examined**
+  (Castellanos Macias, R., 2026, *Anatomy of a Null Result*, SSRN,
+  https://ssrn.com/abstract=7085378, DOI 10.2139/ssrn.7085378; evidence
+  repository `el-trading-no-existe-evidencia`,
+  DOI [10.5281/zenodo.21229492](https://doi.org/10.5281/zenodo.21229492));
   the protocol is documented at
   DOI [10.5281/zenodo.21838807](https://doi.org/10.5281/zenodo.21838807).

@@ -1,11 +1,12 @@
 cff-version: 1.2.0
-message: "If you use this toolkit, please cite it as below, together with the study evidence and the protocol."
+message: "If you use this toolkit, please cite the study paper below (preferred), together with the toolkit itself and the sealed evidence/protocol records."
 type: software
 title: "honesty-harness-toolkit"
 authors:
   - family-names: "Castellanos Macias"
     given-names: "Ricardo"
-version: 0.1.0-rc1
+    orcid: "https://orcid.org/0009-0009-8031-589X"
+version: 0.1.0
 date-released: "2026-09-19"
 license: MIT
 # doi: PENDING — assigned at the Zenodo release of the toolkit.
@@ -14,17 +15,30 @@ abstract: >-
   (pre-registration frozen by hash before results, one cardinal a-priori
   metric, drift-0 GBM placebo as the noise floor of best-of-N selection,
   anti-leakage gates, asymmetric verdicts), extracted from a study that
-  returned a negative result for its own strategy family.
+  returned a negative result across the strategy families it examined.
+preferred-citation:
+  type: article
+  title: "Anatomy of a Null Result: A Pre-registered, Adversarially Audited Case Study of Retail Systematic Trading in Crypto Perpetuals (2018-2026)"
+  authors:
+    - family-names: "Castellanos Macias"
+      given-names: "Ricardo"
+      orcid: "https://orcid.org/0009-0009-8031-589X"
+  year: 2026
+  doi: 10.2139/ssrn.7085378
+  url: "https://ssrn.com/abstract=7085378"
+  journal: "SSRN"
 references:
   - type: data
-    title: "El trading no existe: evidencia (study evidence repository)"
+    title: "el-trading-no-existe-evidencia (sealed study evidence repository)"
     doi: 10.5281/zenodo.21229492
     authors:
       - family-names: "Castellanos Macias"
         given-names: "Ricardo"
+        orcid: "https://orcid.org/0009-0009-8031-589X"
   - type: report
     title: "The Honesty Harness protocol"
     doi: 10.5281/zenodo.21838807
     authors:
       - family-names: "Castellanos Macias"
         given-names: "Ricardo"
+        orcid: "https://orcid.org/0009-0009-8031-589X"

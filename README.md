@@ -1,10 +1,11 @@
 # honesty-harness-toolkit
 
 A walk-forward backtesting engine plus an experimental-honesty protocol (the
-"Honesty Harness"), extracted from the study *Trading edges do not exist:
-evidence* and packaged so that third parties can run their own strategies
-through the same machinery that returned a **negative** result to its own
-author.
+"Honesty Harness"), extracted from the study *Anatomy of a Null Result: A
+Pre-registered, Adversarially Audited Case Study of Retail Systematic Trading
+in Crypto Perpetuals (2018-2026)* (Castellanos Macias, 2026) and packaged so
+that third parties can run their own strategies through the same machinery
+that returned a **negative** result to its own author.
 
 *Leer en español: [README_ES.md](README_ES.md).*
 
@@ -20,24 +21,35 @@ criteria. Without the second half, the first only produces better-decorated
 self-deception.
 
 Honest context: this engine was built for a study that ended in a **negative
-result** — the strategy family under investigation showed no net edge after
-the full harness (seven negative verdicts, meta-audited). That is precisely
-the credential of the toolkit: it is the machinery that was able to tell its
-own author "no".
+result** — 18 strategy families were examined, all negative or sub-threshold,
+with the seven principal verdicts meta-audited by 39 independent agents. That
+is precisely the credential of the toolkit: it is the machinery that was able
+to tell its own author "no".
 
-- Full study evidence (sealed repository): DOI [10.5281/zenodo.21229492](https://doi.org/10.5281/zenodo.21229492)
+Provenance: the engine and this toolkit were implemented by AI agents under
+the direction of a non-programming domain practitioner, following the Honesty
+Harness protocol; the commit history carries the corresponding co-authorship
+trailers.
+
+- Study paper: Castellanos Macias, R. (2026), *Anatomy of a Null Result: A
+  Pre-registered, Adversarially Audited Case Study of Retail Systematic
+  Trading in Crypto Perpetuals (2018-2026)*, SSRN,
+  [https://ssrn.com/abstract=7085378](https://ssrn.com/abstract=7085378),
+  DOI [10.2139/ssrn.7085378](https://doi.org/10.2139/ssrn.7085378)
+- Full study evidence (sealed repository `el-trading-no-existe-evidencia`): DOI [10.5281/zenodo.21229492](https://doi.org/10.5281/zenodo.21229492)
 - Honesty Harness protocol: DOI [10.5281/zenodo.21838807](https://doi.org/10.5281/zenodo.21838807)
-- SSRN preprint: *link pending — inserted at publication*
 
 **This is not investment advice.** Nothing here suggests that trading with
 this engine is profitable; the linked evidence suggests the opposite for the
-family studied.
+strategy families studied.
 
 ## Who it is for
 
 Systematic traders and quantitative-finance students who want to subject a
-trading hypothesis to a protocol that can kill it — before the market does.
-Assumes intermediate Python, pandas, and backtesting basics.
+trading hypothesis to a protocol that can kill it — before the market does —
+and researchers interested in pre-registered, adversarially audited
+computational studies. Assumes intermediate Python, pandas, and backtesting
+basics.
 **Python 3.12+** (verified on 3.12.14 and 3.14.3; toy results are
 bit-identical across both).
 
@@ -94,9 +106,11 @@ On pure drift-0 noise, the best-of-61 configurations averaged **+83%** and
 the best-of-1000 **+138%** (20 worlds; best-of-61 spread −490% to +379%) —
 the bar rises just because you looked more times. On real BTC the best-of-61
 scored +566%, above the floor's p97.5 — and, exactly as the pre-registration
-predicted, that is **not** edge: a drift-0 placebo does not model BTC's
-drift. Post-hoc context (not part of the sealed verdict): buy-and-hold over
-the same window did +1630%. The walk-forward adds the transfer test: on BTC,
+predicted, that does **not establish** edge: a drift-0 placebo does not model
+BTC's drift. Post-hoc context (not part of the sealed verdict): buy-and-hold
+over the same window did +1630%. Accounting note: toy PnL is additive over
+notional (a sum of per-trade percentage returns, no compounding and no ruin
+stop), which is why values below −100% are possible in these distributions. The walk-forward adds the transfer test: on BTC,
 the in-sample winner of each anchor promised +74% on average and delivered
 +6.5% forward. The executed, sealed example of the whole rite is
 [`examples/toy/PREREGISTRO_TOY.md`](examples/toy/PREREGISTRO_TOY.md)
@@ -139,11 +153,17 @@ evidence repository linked above.
 Published **"as is"** under the MIT license. **Bug reports welcome** (issues
 with a reproducible case). **No feature requests**: the engine is published
 as it was used in the study, without generalizations — that is its
-authenticity guarantee.
+evidentiary value.
 
 ## How to cite
 
 See [`CITATION.cff`](CITATION.cff). Toolkit DOI: pending (assigned at the
-Zenodo release). Please cite the study evidence
-(10.5281/zenodo.21229492) and the protocol (10.5281/zenodo.21838807)
-alongside the toolkit.
+Zenodo release). Preferred citation — the study paper:
+
+> Castellanos Macias, R. (2026). *Anatomy of a Null Result: A Pre-registered,
+> Adversarially Audited Case Study of Retail Systematic Trading in Crypto
+> Perpetuals (2018-2026)*. SSRN. https://ssrn.com/abstract=7085378
+> (DOI 10.2139/ssrn.7085378)
+
+Please cite the study evidence (10.5281/zenodo.21229492) and the protocol
+(10.5281/zenodo.21838807) alongside the toolkit.

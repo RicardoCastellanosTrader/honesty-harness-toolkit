@@ -57,7 +57,7 @@ written here cannot be tuned afterwards.
 
 ## 7. Anti-leakage / point-in-time [FREEZE]
 
-How you guarantee no decision sees the future: prefix-invariance gate,
+How you ensure no decision sees the future: prefix-invariance gate,
 backward `merge_asof` for asynchronous data, untouched holdout,
 `engine/leakage_gate.py` where applicable. Declare the holdout budget (which
 data stays virgin and for what).
