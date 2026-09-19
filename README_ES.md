@@ -43,7 +43,9 @@ inglés (`docs/PREREGISTRATION_TEMPLATE_EN.md`).
 sellada (repositorio `el-trading-no-existe-evidencia`) — DOI
 [10.5281/zenodo.21229492](https://doi.org/10.5281/zenodo.21229492) ·
 protocolo — DOI
-[10.5281/zenodo.21838807](https://doi.org/10.5281/zenodo.21838807).
+[10.5281/zenodo.21838807](https://doi.org/10.5281/zenodo.21838807) ·
+este toolkit — DOI
+[10.5281/zenodo.22846067](https://doi.org/10.5281/zenodo.22846067).
 
 **Licencia y soporte**: MIT, "as is". Bug reports bienvenidos; no se aceptan
 feature requests (el motor se publica tal y como se usó en el estudio). Cómo

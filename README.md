@@ -1,5 +1,8 @@
 # honesty-harness-toolkit
 
+[![DOI](https://zenodo.org/badge/1377207660.svg)](https://zenodo.org/badge/latestdoi/1377207660)
+[![ci](https://github.com/RicardoCastellanosTrader/honesty-harness-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/RicardoCastellanosTrader/honesty-harness-toolkit/actions/workflows/ci.yml)
+
 A walk-forward backtesting engine plus an experimental-honesty protocol (the
 "Honesty Harness"), extracted from the study *Anatomy of a Null Result: A
 Pre-registered, Adversarially Audited Case Study of Retail Systematic Trading
@@ -157,8 +160,11 @@ evidentiary value.
 
 ## How to cite
 
-See [`CITATION.cff`](CITATION.cff). Toolkit DOI: pending (assigned at the
-Zenodo release). Preferred citation — the study paper:
+See [`CITATION.cff`](CITATION.cff). Toolkit DOI:
+[10.5281/zenodo.22846067](https://doi.org/10.5281/zenodo.22846067) (v0.1.0;
+concept DOI for all versions:
+[10.5281/zenodo.22846066](https://doi.org/10.5281/zenodo.22846066)).
+Preferred citation — the study paper:
 
 > Castellanos Macias, R. (2026). *Anatomy of a Null Result: A Pre-registered,
 > Adversarially Audited Case Study of Retail Systematic Trading in Crypto

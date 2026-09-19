@@ -9,7 +9,7 @@ authors:
 version: 0.1.0
 date-released: "2026-09-19"
 license: MIT
-# doi: PENDING — assigned at the Zenodo release of the toolkit.
+doi: 10.5281/zenodo.22846067
 abstract: >-
   Walk-forward backtesting engine plus an experimental-honesty protocol
   (pre-registration frozen by hash before results, one cardinal a-priori
