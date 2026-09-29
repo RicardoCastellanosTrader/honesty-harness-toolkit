@@ -42,3 +42,13 @@ references:
       - family-names: "Castellanos Macias"
         given-names: "Ricardo"
         orcid: "https://orcid.org/0009-0009-8031-589X"
+  - type: article
+    title: "The Honesty Harness: Expert-Directed, AI-Executed Empirical Research with Frozen Criteria and Asymmetric Verdicts"
+    year: 2026
+    doi: 10.2139/ssrn.7525882
+    url: "https://ssrn.com/abstract=7525882"
+    journal: "SSRN"
+    authors:
+      - family-names: "Castellanos Macias"
+        given-names: "Ricardo"
+        orcid: "https://orcid.org/0009-0009-8031-589X"

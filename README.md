@@ -41,6 +41,11 @@ trailers.
   DOI [10.2139/ssrn.7085378](https://doi.org/10.2139/ssrn.7085378)
 - Full study evidence (sealed repository `el-trading-no-existe-evidencia`): DOI [10.5281/zenodo.21229492](https://doi.org/10.5281/zenodo.21229492)
 - Honesty Harness protocol: DOI [10.5281/zenodo.21838807](https://doi.org/10.5281/zenodo.21838807)
+- Methods paper (preprint): Castellanos Macias, R. (2026), *The Honesty
+  Harness: Expert-Directed, AI-Executed Empirical Research with Frozen
+  Criteria and Asymmetric Verdicts*, SSRN,
+  [https://ssrn.com/abstract=7525882](https://ssrn.com/abstract=7525882),
+  DOI [10.2139/ssrn.7525882](https://doi.org/10.2139/ssrn.7525882)
 
 **This is not investment advice.** Nothing here suggests that trading with
 this engine is profitable; the linked evidence suggests the opposite for the
