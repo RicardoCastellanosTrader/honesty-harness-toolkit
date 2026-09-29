@@ -163,6 +163,19 @@ with a reproducible case). **No feature requests**: the engine is published
 as it was used in the study, without generalizations — that is its
 evidentiary value.
 
+## Known issues / changelog
+
+- **Fixed (unreleased, will ship in v0.2):** `frozen_hash` in
+  `examples/toy/placebo_verdict.py` cut the frozen-part hash at the first
+  *textual* occurrence of the marker string rather than at the marker
+  *line*; a document that mentions the literal in prose before the marker
+  produced a partial hash (issue #1). The function now anchors on the line
+  starting with `<!-- FREEZE-BOUNDARY`; regression tests cover the prose
+  case and confirm the sealed `PREREGISTRO_TOY.md` sidecar hash is
+  unchanged. The one affected sidecar in the wild and its verification are
+  documented in `VERIFY.md` of the challenge deposit v1.1
+  (doi:10.5281/zenodo.22955059).
+
 ## How to cite
 
 See [`CITATION.cff`](CITATION.cff). Toolkit DOI:

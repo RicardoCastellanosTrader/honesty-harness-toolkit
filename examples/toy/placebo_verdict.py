@@ -120,18 +120,26 @@ def best_of(close, periods, pairs):
     return float(res[k, 0]), k
 
 
-def frozen_hash():
+def frozen_hash(path=None):
     """sha256 de la parte CONGELADA del prerregistro (hasta la línea del
-    marcador FREEZE-BOUNDARY inclusive). El §10 (veredicto) va después del
-    marcador y no altera el hash."""
-    if not os.path.exists(PREREG):
+    marcador FREEZE-BOUNDARY inclusive). El marcador se ancla al INICIO de
+    línea: una mención del literal en prosa antes del marcador NO corta el
+    hash (issue #1: el corte en la primera aparición textual produjo un hash
+    parcial en un prerregistro cuyo §0 citaba el literal). El §10 (veredicto)
+    va después del marcador y no altera el hash."""
+    path = path or PREREG
+    if not os.path.exists(path):
         return None
-    with open(PREREG, 'rb') as f:
+    with open(path, 'rb') as f:
         raw = f.read()
     marker = FREEZE_MARKER.encode('utf-8')
-    idx = raw.find(marker)
-    if idx < 0:
-        return None
+    if raw.startswith(marker):
+        idx = 0
+    else:
+        idx = raw.find(b'\n' + marker)
+        if idx < 0:
+            return None
+        idx += 1
     end = raw.find(b'\n', idx)
     end = len(raw) if end < 0 else end + 1
     return hashlib.sha256(raw[:end]).hexdigest()
